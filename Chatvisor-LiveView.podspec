@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "Chatvisor-LiveView"
-    s.version      = "1.0.4"
+    s.version      = "1.0.5"
     s.summary      = "Chatvisor CoBrowsing framework"
     s.description  = <<-DESC
     Framework for using Chatvisor CoBrowsing with iOS
