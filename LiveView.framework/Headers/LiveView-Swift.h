@@ -200,10 +200,22 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
+
+SWIFT_CLASS("_TtC8LiveView10ActiveUser")
+@interface ActiveUser : NSObject
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, copy) NSString * _Nullable firstname;
+@property (nonatomic, copy) NSString * _Nullable lastname;
+@property (nonatomic, copy) NSString * _Nullable email;
+@property (nonatomic, copy) NSArray<NSString *> * _Nullable tags;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class ChatvisorLiveView;
 @class ChatvisorCoBrowsing;
 @class ChatvisorWebChat;
 @class ChatvisorConfiguration;
+@class ChatvisorUser;
 
 SWIFT_CLASS("_TtC8LiveView9Chatvisor")
 @interface Chatvisor : NSObject
@@ -211,6 +223,7 @@ SWIFT_CLASS("_TtC8LiveView9Chatvisor")
 + (ChatvisorCoBrowsing * _Nonnull)coBrowsing SWIFT_WARN_UNUSED_RESULT;
 + (ChatvisorWebChat * _Nonnull)webChat SWIFT_WARN_UNUSED_RESULT;
 + (ChatvisorConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
++ (ChatvisorUser * _Nonnull)user SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -264,6 +277,14 @@ SWIFT_CLASS("_TtC8LiveView17ChatvisorLiveView")
 /// returns:
 ///
 - (NSString * _Nonnull)shareId SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC8LiveView13ChatvisorUser")
+@interface ChatvisorUser : NSObject
+- (void)tag:(ActiveUser * _Nonnull)user;
+- (void)clear;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
