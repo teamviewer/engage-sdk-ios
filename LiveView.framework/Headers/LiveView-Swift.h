@@ -208,6 +208,7 @@ SWIFT_CLASS("_TtC8LiveView10ActiveUser")
 @property (nonatomic, copy) NSString * _Nullable lastname;
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSArray<NSString *> * _Nullable tags;
+@property (nonatomic, copy) NSString * _Nullable assignedUser;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
