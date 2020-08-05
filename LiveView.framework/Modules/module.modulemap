@@ -1,4 +1,4 @@
 framework module LiveView {
-    header "LiveView-Swift.h"
-    requires objc
+  header "LiveView-Swift.h"
+  requires objc
 }
