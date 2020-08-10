@@ -1,0 +1,66 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
+// swift-module-flags: -target i386-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LiveView
+import Dip
+import Foundation
+import Starscream
+import Swift
+import SwiftProtobuf
+import UIKit
+import WebKit
+import os
+@objc @objcMembers public class ActiveUser : ObjectiveC.NSObject {
+  @objc public var id: Swift.String?
+  @objc public var firstname: Swift.String?
+  @objc public var lastname: Swift.String?
+  @objc public var email: Swift.String?
+  @objc public var tags: [Swift.String]?
+  @objc public var assignedUser: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct BidirectionalMessage {
+}
+public struct Click {
+}
+@objc public class Chatvisor : ObjectiveC.NSObject {
+  @objc public static func liveView() -> LiveView.ChatvisorLiveView
+  @objc public static func coBrowsing() -> LiveView.ChatvisorCoBrowsing
+  @objc public static func webChat() -> LiveView.ChatvisorWebChat
+  @objc public static func configuration() -> LiveView.ChatvisorConfiguration
+  @objc public static func user() -> LiveView.ChatvisorUser
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class ChatvisorCoBrowsing : ObjectiveC.NSObject {
+  @objc public func start(with tenantId: Swift.String, and token: Swift.String)
+  @objc public func stop()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class ChatvisorConfiguration : ObjectiveC.NSObject {
+  @objc public func setCdnServer(hostname: Swift.String)
+  @objc public func setServer(hostname: Swift.String)
+  @objc deinit
+}
+@objc public class ChatvisorLiveView : ObjectiveC.NSObject {
+  @objc public func start(with userId: Swift.String, and token: Swift.String)
+  @objc public func stop()
+  @objc public func connected() -> Swift.Bool
+  @objc public func tag(_ tag: Swift.String)
+  @objc public func registerCallbacks(forStart startCallback: @escaping () -> Swift.Void, andStop stopCallback: @escaping () -> Swift.Void)
+  @objc public func shareId() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class ChatvisorUser : ObjectiveC.NSObject {
+  @objc public func tag(_ user: LiveView.ActiveUser)
+  @objc public func clear()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class ChatvisorWebChat : ObjectiveC.NSObject {
+  @objc public func open(for tenantId: Swift.String)
+  @objc override dynamic public init()
+  @objc deinit
+}
