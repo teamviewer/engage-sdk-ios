@@ -6,15 +6,15 @@
 	<dict>
 		<key>DefaultUIView.nib/objects-11.0+.nib</key>
 		<data>
-		ywIz0pc6Hwp4ZEpnc3RDqDPqfN8=
+		9Y30GtNP2VQtvAkwWwIJPHLhrwE=
 		</data>
 		<key>DefaultUIView.nib/objects-13.0+.nib</key>
 		<data>
-		Ebf8Nkg3w/7Aq08TwEpb5yTRFHM=
+		YngcGTkTJhPm+bfs5pqiQVMz8QY=
 		</data>
 		<key>DefaultUIView.nib/runtime.nib</key>
 		<data>
-		ddQq+heNsehOuPlhTOe2NmKXVZg=
+		cLQbZRDzXHXXMYVv6ZfLziaPApw=
 		</data>
 		<key>Headers/LiveView-Swift.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/LiveView.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dS8vrXY0TPrFEy0lhbWt6sm8QRI=
+		fQtJ4jsE+lb5VQHRL0QVkxMTFdo=
 		</data>
 		<key>Modules/LiveView.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Modules/LiveView.swiftmodule/i386.swiftmodule</key>
 		<data>
-		dS8vrXY0TPrFEy0lhbWt6sm8QRI=
+		fQtJ4jsE+lb5VQHRL0QVkxMTFdo=
 		</data>
 		<key>Modules/LiveView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/LiveView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DTWiKfLY7iONI/fGu0ljJCiTf1o=
+		SnX2Fnr5NTKqOeCA0Q/K+tDvZVc=
 		</data>
 		<key>Modules/LiveView.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Modules/LiveView.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		DTWiKfLY7iONI/fGu0ljJCiTf1o=
+		SnX2Fnr5NTKqOeCA0Q/K+tDvZVc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -84,6 +84,10 @@
 		<data>
 		9IufVoq8HyFw/R5rTi6zvBajiMk=
 		</data>
+		<key>chat_logo.png</key>
+		<data>
+		kSvbfE5ZoEFgpYOI1mxzlVLhJpM=
+		</data>
 		<key>close.svg.png</key>
 		<data>
 		7ozCyShttQn7J+b1hfjhWLrgA6E=
@@ -95,33 +99,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ywIz0pc6Hwp4ZEpnc3RDqDPqfN8=
+			9Y30GtNP2VQtvAkwWwIJPHLhrwE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Qv25jACG7JjU6+QXwGKbbWdOw6NhU3TCT0PAquUFGjk=
+			jio+hG97BiGy6btksBKL3hhi4YhVxVNTX2dbrE6dIEQ=
 			</data>
 		</dict>
 		<key>DefaultUIView.nib/objects-13.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Ebf8Nkg3w/7Aq08TwEpb5yTRFHM=
+			YngcGTkTJhPm+bfs5pqiQVMz8QY=
 			</data>
 			<key>hash2</key>
 			<data>
-			DwUYPzsoFeksqixjW0sUu7sQb5HyNS8WApxNcuL6kv8=
+			3bQUv/3SPeO/sH26D05Iv+QQUSrVb/jyuELCpFU/wbE=
 			</data>
 		</dict>
 		<key>DefaultUIView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ddQq+heNsehOuPlhTOe2NmKXVZg=
+			cLQbZRDzXHXXMYVv6ZfLziaPApw=
 			</data>
 			<key>hash2</key>
 			<data>
-			IYy9V7ZtLPK0b/8ekBswfIOhoTFMZfaR2/f3ZHXxMik=
+			P1BkU/+I7CBsPFiC+BbDe+CArhza45Jl/MVtoI6Lvag=
 			</data>
 		</dict>
 		<key>Headers/LiveView-Swift.h</key>
@@ -161,11 +165,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dS8vrXY0TPrFEy0lhbWt6sm8QRI=
+			fQtJ4jsE+lb5VQHRL0QVkxMTFdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			r04X8CKHmWaAxCaBx3GDUtLUo4bhojVBrpp4TVv7fn0=
+			R0D6VBN6589XWAUlmAD9Y3HBmIVnepNZG3j6CDY5cw0=
 			</data>
 		</dict>
 		<key>Modules/LiveView.swiftmodule/i386.swiftdoc</key>
@@ -194,11 +198,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dS8vrXY0TPrFEy0lhbWt6sm8QRI=
+			fQtJ4jsE+lb5VQHRL0QVkxMTFdo=
 			</data>
 			<key>hash2</key>
 			<data>
-			r04X8CKHmWaAxCaBx3GDUtLUo4bhojVBrpp4TVv7fn0=
+			R0D6VBN6589XWAUlmAD9Y3HBmIVnepNZG3j6CDY5cw0=
 			</data>
 		</dict>
 		<key>Modules/LiveView.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -227,11 +231,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DTWiKfLY7iONI/fGu0ljJCiTf1o=
+			SnX2Fnr5NTKqOeCA0Q/K+tDvZVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			viqmGrQDc3jYFfIS8kDQnlA6BHfO4QnxNC18T+G6NKw=
+			QJ+0oAi7j8eS7uvKCvZmZ6+XJAgI9NNpiaeP1AiP3hw=
 			</data>
 		</dict>
 		<key>Modules/LiveView.swiftmodule/x86_64.swiftdoc</key>
@@ -260,11 +264,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DTWiKfLY7iONI/fGu0ljJCiTf1o=
+			SnX2Fnr5NTKqOeCA0Q/K+tDvZVc=
 			</data>
 			<key>hash2</key>
 			<data>
-			viqmGrQDc3jYFfIS8kDQnlA6BHfO4QnxNC18T+G6NKw=
+			QJ+0oAi7j8eS7uvKCvZmZ6+XJAgI9NNpiaeP1AiP3hw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -298,6 +302,17 @@
 			<key>hash2</key>
 			<data>
 			J5NPOEvkkTiDmYWywGhxTd8tlGGWfklLtp8lm+96HTg=
+			</data>
+		</dict>
+		<key>chat_logo.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			kSvbfE5ZoEFgpYOI1mxzlVLhJpM=
+			</data>
+			<key>hash2</key>
+			<data>
+			y5y+KhPN8EcPbOyOOGal3n9SVJFA3/Wl58ElxpgG+Es=
 			</data>
 		</dict>
 		<key>close.svg.png</key>
