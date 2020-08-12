@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name         = "Chatvisor-LiveView"
-    s.version      = "1.0.13"
+    s.version      = "1.0.14"
     s.summary      = "Chatvisor CoBrowsing framework"
     s.description  = <<-DESC
     Framework for using Chatvisor CoBrowsing with iOS
@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
     }
     s.author             = { "Chatvisor" => "office@chatvisor.com" }
     s.public_header_files = "LiveView.xcframework/*/LiveView.framework/Headers/*.h"
-    s.source = { :git => "https://gitlab.com/chatvisor/ios-release.git", :tag => "1.0.13" }
+    s.source = { :git => "https://gitlab.com/chatvisor/ios-release.git", :tag => "1.0.14" }
     s.source_files = "LiveView.xcframework/*/LiveView.framework/Headers/*.h"
     s.vendored_frameworks = "LiveView.xcframework"
     s.platform = :ios
