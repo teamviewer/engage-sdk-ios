@@ -183,8 +183,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import FirebaseMessaging;
 @import ObjectiveC;
 @import UIKit;
+@import UserNotifications;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -291,10 +293,41 @@ SWIFT_CLASS("_TtC8LiveView13ChatvisorUser")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UNUserNotificationCenter;
+@class UNNotification;
+@class FIRMessaging;
 
 SWIFT_CLASS("_TtC8LiveView16ChatvisorWebChat")
-@interface ChatvisorWebChat : NSObject
+@interface ChatvisorWebChat : NSObject <FIRMessagingDelegate, UNUserNotificationCenterDelegate>
 - (void)openFor:(NSString * _Nonnull)tenantId;
+/// Asks for notification authorization on the first call.
+/// Registers the application for remote notifications.
+/// Call this function when the permissions should be requested but in any case after initialization.
+/// Notifications can only be received after this function is called.
+- (void)requestNotificationAuthorization;
+/// Opens the chatvisor chat when receiving a notification.
+/// Has to be called in application(_:didReceiveRemoteNotification:)
+- (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;
+/// Sets the UNUserNotificationCenter delegate.
+/// Call this function from your application(<em>:willFinishLaunchingWithOptions:) or
+/// application(</em>:didFinishLaunchingWithOptions:)
+- (void)setupUNUserNotificationCenterDelegate;
+/// Default function for UNUserNotificationCenter delegate
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+/// Checks if the chat is already open. If not, it creates a notification.
+/// Call this function in your UNUserNotificationCenter delegate in userNotificationCenter(_:willPresent:withCompletionHandler:).
+/// This function returns true when it handles the notification and calls the completionHandler, false otherwise.
+- (BOOL)processesNotificationWithNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Initializes the Firebase SDK
+/// Call this functin from your application(<em>:willFinishLauchingWithOptions:) or
+/// application(</em>:didFinishLaunchingWithOptions:)
+- (void)initFirebase SWIFT_METHOD_FAMILY(none);
+/// Sets the FirebaseMessaging.FIRMessaging delegate.
+/// Call this function from your application(<em>:willFinishLaunchingWithOptions:) or
+/// application(</em>:didFinishLaunchingWithOptions:)
+- (void)setupMessagingDelegate;
+/// Notifies the chatvisor server about the new mobile device token.
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveRegistrationToken:(NSString * _Nonnull)fcmToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -493,8 +526,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import FirebaseMessaging;
 @import ObjectiveC;
 @import UIKit;
+@import UserNotifications;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -601,10 +636,41 @@ SWIFT_CLASS("_TtC8LiveView13ChatvisorUser")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UNUserNotificationCenter;
+@class UNNotification;
+@class FIRMessaging;
 
 SWIFT_CLASS("_TtC8LiveView16ChatvisorWebChat")
-@interface ChatvisorWebChat : NSObject
+@interface ChatvisorWebChat : NSObject <FIRMessagingDelegate, UNUserNotificationCenterDelegate>
 - (void)openFor:(NSString * _Nonnull)tenantId;
+/// Asks for notification authorization on the first call.
+/// Registers the application for remote notifications.
+/// Call this function when the permissions should be requested but in any case after initialization.
+/// Notifications can only be received after this function is called.
+- (void)requestNotificationAuthorization;
+/// Opens the chatvisor chat when receiving a notification.
+/// Has to be called in application(_:didReceiveRemoteNotification:)
+- (void)didReceiveRemoteNotificationWithUserInfo:(NSDictionary * _Nonnull)userInfo;
+/// Sets the UNUserNotificationCenter delegate.
+/// Call this function from your application(<em>:willFinishLaunchingWithOptions:) or
+/// application(</em>:didFinishLaunchingWithOptions:)
+- (void)setupUNUserNotificationCenterDelegate;
+/// Default function for UNUserNotificationCenter delegate
+- (void)userNotificationCenter:(UNUserNotificationCenter * _Nonnull)center willPresentNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler;
+/// Checks if the chat is already open. If not, it creates a notification.
+/// Call this function in your UNUserNotificationCenter delegate in userNotificationCenter(_:willPresent:withCompletionHandler:).
+/// This function returns true when it handles the notification and calls the completionHandler, false otherwise.
+- (BOOL)processesNotificationWithNotification:(UNNotification * _Nonnull)notification withCompletionHandler:(void (^ _Nonnull)(UNNotificationPresentationOptions))completionHandler SWIFT_WARN_UNUSED_RESULT;
+/// Initializes the Firebase SDK
+/// Call this functin from your application(<em>:willFinishLauchingWithOptions:) or
+/// application(</em>:didFinishLaunchingWithOptions:)
+- (void)initFirebase SWIFT_METHOD_FAMILY(none);
+/// Sets the FirebaseMessaging.FIRMessaging delegate.
+/// Call this function from your application(<em>:willFinishLaunchingWithOptions:) or
+/// application(</em>:didFinishLaunchingWithOptions:)
+- (void)setupMessagingDelegate;
+/// Notifies the chatvisor server about the new mobile device token.
+- (void)messaging:(FIRMessaging * _Nonnull)messaging didReceiveRegistrationToken:(NSString * _Nonnull)fcmToken;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

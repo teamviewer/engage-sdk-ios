@@ -2,7 +2,9 @@
 // swift-compiler-version: Apple Swift version 5.1 (swiftlang-1100.0.270.13 clang-1100.0.33.7)
 // swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LiveView
 import Dip
+import Firebase
 import Foundation
+import QuickLook
 import Starscream
 import Swift
 import SwiftProtobuf
@@ -59,8 +61,17 @@ public struct Click {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc public class ChatvisorWebChat : ObjectiveC.NSObject {
+@objc public class ChatvisorWebChat : ObjectiveC.NSObject, UserNotifications.UNUserNotificationCenterDelegate, FirebaseMessaging.MessagingDelegate {
+  final public let categoryIdentifier: Swift.String
   @objc public func open(for tenantId: Swift.String)
+  @objc public func requestNotificationAuthorization()
+  @objc public func didReceiveRemoteNotification(userInfo: [Swift.AnyHashable : Any])
+  @objc public func setupUNUserNotificationCenterDelegate()
+  @objc public func userNotificationCenter(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
+  @objc public func processesNotification(notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void) -> Swift.Bool
+  @objc public func initFirebase()
+  @objc public func setupMessagingDelegate()
+  @objc public func messaging(_ messaging: FirebaseMessaging.Messaging, didReceiveRegistrationToken fcmToken: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }
