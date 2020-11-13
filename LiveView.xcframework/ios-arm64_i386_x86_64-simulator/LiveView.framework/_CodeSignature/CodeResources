@@ -4,13 +4,17 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Config.plist</key>
+		<data>
+		DrD63M3LCF16tRIuLxuuZaRW2S8=
+		</data>
 		<key>DefaultUIView.nib/objects-11.0+.nib</key>
 		<data>
-		L8zHuMzxpyEzVZ89PM3qnOL4Vcs=
+		dcUDKrb0WSHe7vR9P0MlONVPQA8=
 		</data>
 		<key>DefaultUIView.nib/runtime.nib</key>
 		<data>
-		3uFy7lb6kpDeNEyYe177O0gWTz0=
+		QxBMJxTADfpyyJdE1mt8H+R9oYY=
 		</data>
 		<key>DemoApp.plist</key>
 		<data>
@@ -135,26 +139,37 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Config.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DrD63M3LCF16tRIuLxuuZaRW2S8=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z67uCzliU8o2TmPE15n7xVyHQITORfiAnsCHz+2hteM=
+			</data>
+		</dict>
 		<key>DefaultUIView.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L8zHuMzxpyEzVZ89PM3qnOL4Vcs=
+			dcUDKrb0WSHe7vR9P0MlONVPQA8=
 			</data>
 			<key>hash2</key>
 			<data>
-			HikTZxedbPMqWgCAdI22nF0L7A3WQd70OGwfBCMA19c=
+			B15PA+8zZSlZ1FWa7X/ApyPMFueqCH8tWhv3J2u6HzA=
 			</data>
 		</dict>
 		<key>DefaultUIView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3uFy7lb6kpDeNEyYe177O0gWTz0=
+			QxBMJxTADfpyyJdE1mt8H+R9oYY=
 			</data>
 			<key>hash2</key>
 			<data>
-			hIPc4ANDbQTv7xVumB6yR2TOQkQ2NRX3V6jzKLObSBY=
+			8CMdp9plHvHjlvTpvBzzPhEon2gbvYX7+YkmJroV7CM=
 			</data>
 		</dict>
 		<key>DemoApp.plist</key>
