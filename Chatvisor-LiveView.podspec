@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
     s.source_files = "LiveView.xcframework/*/LiveView.framework/Headers/*.h"
     s.vendored_frameworks = "LiveView.xcframework"
     s.platform = :ios
-    s.swift_version = "5.0"
+    s.swift_version = "4.2"
+    s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+    s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
     s.ios.deployment_target  = '10.0'
     s.dependency "Dip", "~> 7.0"
     s.dependency "Starscream", "~> 3.1"
