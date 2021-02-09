@@ -30,12 +30,19 @@ public struct Click {
   @objc public static func webChat() -> LiveView.ChatvisorWebChat
   @objc public static func configuration() -> LiveView.ChatvisorConfiguration
   @objc public static func user() -> LiveView.ChatvisorUser
-  @objc public static func initConfig(tenantId: Swift.String, token: Swift.String)
+  @objc public static func initConfig(tenantId: Swift.String, token: Swift.String) -> LiveView.InitConfiguration?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_inheritsConvenienceInitializers @objc public class InitConfiguration : ObjectiveC.NSObject {
+  public func withCustomServer(hostname: Swift.String) -> LiveView.InitConfiguration
+  public func withCustomCdnServer(cdnServer: Swift.String) -> LiveView.InitConfiguration
   @objc deinit
   @objc override dynamic public init()
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorCoBrowsing : ObjectiveC.NSObject {
   @objc public func start(with tenantId: Swift.String, and token: Swift.String)
+  @objc public func start()
   @objc public func stop()
   @objc override dynamic public init()
   @objc deinit
@@ -47,6 +54,7 @@ public struct Click {
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorLiveView : ObjectiveC.NSObject {
   @objc public func start(with userId: Swift.String, and token: Swift.String)
+  @objc public func start()
   @objc public func stop()
   @objc public func connected() -> Swift.Bool
   @objc public func tag(_ tag: Swift.String)
