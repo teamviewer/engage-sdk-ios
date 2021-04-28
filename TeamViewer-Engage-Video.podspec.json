@@ -13,13 +13,13 @@
   },
   "public_header_files": "LiveViewConference.xcframework/*/LiveViewConference.framework/Headers/*.h",
   "source": {
-    "git": "https://gitlab.com/chatvisor/ios-release.git"
+    "git": "https://gitlab.com/chatvisor/ios-release.git",
     "tag": "1.0.31"
   },
   "source_files": "LiveViewConference.xcframework/*/LiveViewConference.framework/Headers/*.h",
   "vendored_frameworks": "LiveViewConference.xcframework",
   "platforms": {
-    "ios": "10.0"
+    "ios": "11.0"
   },
   "swift_versions": "4.2",
   "dependencies": {
