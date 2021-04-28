@@ -1,0 +1,4 @@
+framework module LiveViewConference {
+  header "LiveViewConference-Swift.h"
+  requires objc
+}
