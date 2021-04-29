@@ -309,6 +309,8 @@ SWIFT_CLASS("_TtC8LiveView16ChatvisorWebChat")
 
 SWIFT_CLASS("_TtC8LiveView17InitConfiguration")
 @interface InitConfiguration : NSObject
+- (InitConfiguration * _Nonnull)withCustomServerWithHostname:(NSString * _Nonnull)hostname SWIFT_WARN_UNUSED_RESULT;
+- (InitConfiguration * _Nonnull)withCustomCdnServerWithCdnServer:(NSString * _Nonnull)cdnServer SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

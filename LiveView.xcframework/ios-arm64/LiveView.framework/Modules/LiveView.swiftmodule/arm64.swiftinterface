@@ -35,8 +35,8 @@ public struct Click {
   @objc override dynamic public init()
 }
 @_inheritsConvenienceInitializers @objc public class InitConfiguration : ObjectiveC.NSObject {
-  public func withCustomServer(hostname: Swift.String) -> LiveView.InitConfiguration
-  public func withCustomCdnServer(cdnServer: Swift.String) -> LiveView.InitConfiguration
+  @objc public func withCustomServer(hostname: Swift.String) -> LiveView.InitConfiguration
+  @objc public func withCustomCdnServer(cdnServer: Swift.String) -> LiveView.InitConfiguration
   @objc deinit
   @objc override dynamic public init()
 }
