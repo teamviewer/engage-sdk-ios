@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3 effective-4.2 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-compiler-version: Apple Swift version 5.3.2 effective-4.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name LiveViewConference
 import Dip
 import Foundation
@@ -56,8 +56,9 @@ public struct Click {
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorConference : ObjectiveC.NSObject {
   @objc public func start(conferenceProperties: LiveViewConference.ConferenceProperties)
+  @objc public func start(conferenceProperties: LiveViewConference.ConferenceProperties, showInviteDialog: Swift.Bool)
   @objc public func join(conferenceProperties: LiveViewConference.ConferenceProperties)
-  @objc public func queueStatus(customerId: Swift.String, completion: @escaping (Swift.Int) -> ())
+  @objc public func queueStatus(completion: @escaping (Swift.Int) -> ())
   @objc override dynamic public init()
   @objc deinit
 }
@@ -79,6 +80,7 @@ public struct Click {
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorUser : ObjectiveC.NSObject {
   @objc public func tag(_ user: LiveViewConference.ActiveUser)
+  @objc public func tag(_ user: LiveViewConference.ActiveUser, callback: @escaping (Swift.Bool) -> ())
   @objc public func clear()
   @objc override dynamic public init()
   @objc deinit
@@ -88,6 +90,13 @@ public struct Click {
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class CommunicationBase {
+  public func registerStatus()
+  public func releaseStatus()
+  public func release(id: Swift.String)
+  public func releaseAll()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @objcMembers public class ConferenceProperties : ObjectiveC.NSObject {
   @objc public var customerId: Swift.String?
   @objc public var firstname: Swift.String?
@@ -95,13 +104,18 @@ public struct Click {
   @objc public var displayName: Swift.String?
   @objc public var email: Swift.String?
   @objc public var phoneNumber: Swift.String?
-  @objc deinit
+  @objc public func withActiveUser(activeUser: LiveViewConference.ActiveUser?) -> LiveViewConference.ConferenceProperties
   @objc override dynamic public init()
+  @objc deinit
 }
 extension Injection {
   public static func addConferenceToContainer(container: Dip.DependencyContainer)
 }
 @_hasMissingDesignatedInitializers public class Injection {
   public static func getContainer() -> Dip.DependencyContainer
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class UserUtil {
+  public static func tagUserIfNeeded(callback: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }

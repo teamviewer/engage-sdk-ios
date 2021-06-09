@@ -10,7 +10,7 @@
 		</data>
 		<key>DefaultUIView.nib</key>
 		<data>
-		xP7SuqBP0jrTzAtjOpybIhcsf34=
+		pu7KXqG6vlEiKOALwktObZ4k4Xs=
 		</data>
 		<key>DemoApp.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/LiveViewConference-Swift.h</key>
 		<data>
-		oG/dXINVwHELGHj/VsyvhFpJcgU=
+		jKy6VSslrOgReEWM23iEIGYKmKw=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0CWumaoKElqqs3KZBMemS3zKcvI=
+		+02Gs24mYUNEIH6qHuKY54oGtYs=
 		</data>
 		<key>Local.plist</key>
 		<data>
@@ -30,27 +30,27 @@
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		QFnLLim5CBlIUH/OmtQ6cULzJ0M=
+		bP+remgYcv36eebX16BHwTPsLIc=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SbLqzlWl/cy0lU8ogVlghZ1vERI=
+		6bqakgx686hEwnRCIZHPw4lnsug=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZhL7OHV16eftgUZccmE5paX7qVI=
+		FNpmdQPVfVGJWA1sJLMCvoepE4o=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftdoc</key>
 		<data>
-		QFnLLim5CBlIUH/OmtQ6cULzJ0M=
+		bP+remgYcv36eebX16BHwTPsLIc=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		SbLqzlWl/cy0lU8ogVlghZ1vERI=
+		6bqakgx686hEwnRCIZHPw4lnsug=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		ZhL7OHV16eftgUZccmE5paX7qVI=
+		FNpmdQPVfVGJWA1sJLMCvoepE4o=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -94,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ip4WYZJB6ZZhCHUeUJxjZcX+9D7uOvKiES5JXrNAe1w=
+			ATjW6qadPbrdXqdDeaiwPVyyb57i4+q5Gee6H4dbQNs=
 			</data>
 		</dict>
 		<key>DemoApp.plist</key>
@@ -108,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			U6Ih0SY+BPgPVe2dP2EnvWr1m5n6cWgoyd1g3l3O/MI=
+			qFFmYkys4KDseZv4Im6nLUbCaUCTSDdyzEBHkKA8znI=
 			</data>
 		</dict>
 		<key>Local.plist</key>
@@ -122,42 +122,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			09McHbDhGhXWVQLxtlVDeKZ1TT1j4WsTe2Mb0xMfAw8=
+			qDbTTd71QrbvZULd1hogxzizygIM5NLGa1LsTl4dB8g=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7PukVDitZcR5thxhE/eJBpI3bmZHCXK76R2toJPTBGs=
+			AdN6I/PNedPOuCMb3mCoz7sRmjOFD5EfVr1Od+Qu3KQ=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikBkPaDESo86IUPqY0ZhkFpHq5cgCwH+diPaPcAfmso=
+			KlgHy97BGVFZcZIPRI4gCM5Y+wZQHIgEn0ymIgryaWs=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			09McHbDhGhXWVQLxtlVDeKZ1TT1j4WsTe2Mb0xMfAw8=
+			qDbTTd71QrbvZULd1hogxzizygIM5NLGa1LsTl4dB8g=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7PukVDitZcR5thxhE/eJBpI3bmZHCXK76R2toJPTBGs=
+			AdN6I/PNedPOuCMb3mCoz7sRmjOFD5EfVr1Od+Qu3KQ=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ikBkPaDESo86IUPqY0ZhkFpHq5cgCwH+diPaPcAfmso=
+			KlgHy97BGVFZcZIPRI4gCM5Y+wZQHIgEn0ymIgryaWs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
