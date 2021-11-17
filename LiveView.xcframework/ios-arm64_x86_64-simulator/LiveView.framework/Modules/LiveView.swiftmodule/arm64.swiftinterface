@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 effective-4.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-compiler-version: Apple Swift version 5.5.1 effective-4.2 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name LiveView
 import Dip
 import Foundation
@@ -9,6 +9,7 @@ import Swift
 import SwiftProtobuf
 import UIKit
 import WebKit
+import _Concurrency
 import os
 @objc @_inheritsConvenienceInitializers @objcMembers public class ActiveUser : ObjectiveC.NSObject {
   @objc public var id: Swift.String?
@@ -17,8 +18,8 @@ import os
   @objc public var email: Swift.String?
   @objc public var tags: [Swift.String]?
   @objc public var assignedUser: Swift.String?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 public struct BidirectionalMessage {
 }
@@ -31,14 +32,14 @@ public struct Click {
   @objc public static func configuration() -> LiveView.ChatvisorConfiguration
   @objc public static func user() -> LiveView.ChatvisorUser
   @objc public static func initConfig(tenantId: Swift.String, token: Swift.String) -> LiveView.InitConfiguration?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class InitConfiguration : ObjectiveC.NSObject {
   @objc public func withCustomServer(hostname: Swift.String) -> LiveView.InitConfiguration
   @objc public func withCustomCdnServer(cdnServer: Swift.String) -> LiveView.InitConfiguration
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ChatvisorAPI {
   @objc deinit
