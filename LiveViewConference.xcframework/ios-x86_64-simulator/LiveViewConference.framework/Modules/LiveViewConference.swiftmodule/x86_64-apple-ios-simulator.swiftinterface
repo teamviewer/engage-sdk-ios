@@ -35,14 +35,17 @@ public struct Click {
   @objc public static func webChat() -> LiveViewConference.ChatvisorWebChat
   @objc public static func configuration() -> LiveViewConference.ChatvisorConfiguration
   @objc public static func user() -> LiveViewConference.ChatvisorUser
-  @objc public static func initConfig(tenantId: Swift.String, token: Swift.String) -> LiveViewConference.InitConfiguration?
+  @objc public static func initConfig(tenantId: Swift.String, token: Swift.String)
+  @objc public static func initConfig(_ initConfig: LiveViewConference.CustomConfiguration)
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class InitConfiguration : ObjectiveC.NSObject {
-  @objc public func withCustomServer(hostname: Swift.String) -> LiveViewConference.InitConfiguration
-  @objc public func withCustomCdnServer(cdnServer: Swift.String) -> LiveViewConference.InitConfiguration
+@_inheritsConvenienceInitializers @objc public class CustomConfiguration : ObjectiveC.NSObject {
+  @available(*, unavailable)
   @objc override dynamic public init()
+  @objc public init(tenantId: Swift.String, token: Swift.String)
+  @objc public func setServerUrl(_ url: Swift.String)
+  @objc public func setCdnUrl(_ url: Swift.String)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ChatvisorAPI {
@@ -81,7 +84,7 @@ public struct Click {
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorUser : ObjectiveC.NSObject {
   @objc public func tag(_ user: LiveViewConference.ActiveUser)
-  @objc public func tag(_ user: LiveViewConference.ActiveUser, callback: @escaping (Swift.Bool) -> ())
+  @objc public func tag(_ user: LiveViewConference.ActiveUser, callback: @escaping (Swift.Bool) -> Swift.Void)
   @objc public func clear()
   @objc override dynamic public init()
   @objc deinit

@@ -225,7 +225,7 @@ SWIFT_CLASS("_TtC18LiveViewConference10ActiveUser")
 @class ChatvisorWebChat;
 @class ChatvisorConfiguration;
 @class ChatvisorUser;
-@class InitConfiguration;
+@class CustomConfiguration;
 
 SWIFT_CLASS("_TtC18LiveViewConference9Chatvisor")
 @interface Chatvisor : NSObject
@@ -234,7 +234,8 @@ SWIFT_CLASS("_TtC18LiveViewConference9Chatvisor")
 + (ChatvisorWebChat * _Nonnull)webChat SWIFT_WARN_UNUSED_RESULT;
 + (ChatvisorConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
 + (ChatvisorUser * _Nonnull)user SWIFT_WARN_UNUSED_RESULT;
-+ (InitConfiguration * _Nullable)initConfigWithTenantId:(NSString * _Nonnull)tenantId token:(NSString * _Nonnull)token SWIFT_METHOD_FAMILY(none) SWIFT_WARN_UNUSED_RESULT;
++ (void)initConfigWithTenantId:(NSString * _Nonnull)tenantId token:(NSString * _Nonnull)token SWIFT_METHOD_FAMILY(none);
++ (void)initConfig:(CustomConfiguration * _Nonnull)initConfig SWIFT_METHOD_FAMILY(none);
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -358,11 +359,12 @@ SWIFT_CLASS("_TtC18LiveViewConference20ConferenceProperties")
 @end
 
 
-SWIFT_CLASS("_TtC18LiveViewConference17InitConfiguration")
-@interface InitConfiguration : NSObject
-- (InitConfiguration * _Nonnull)withCustomServerWithHostname:(NSString * _Nonnull)hostname SWIFT_WARN_UNUSED_RESULT;
-- (InitConfiguration * _Nonnull)withCustomCdnServerWithCdnServer:(NSString * _Nonnull)cdnServer SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS("_TtC18LiveViewConference19CustomConfiguration")
+@interface CustomConfiguration : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithTenantId:(NSString * _Nonnull)tenantId token:(NSString * _Nonnull)token OBJC_DESIGNATED_INITIALIZER;
+- (void)setServerUrl:(NSString * _Nonnull)url;
+- (void)setCdnUrl:(NSString * _Nonnull)url;
 @end
 
 

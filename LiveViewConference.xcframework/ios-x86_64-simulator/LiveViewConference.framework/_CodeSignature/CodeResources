@@ -18,11 +18,11 @@
 		</data>
 		<key>Headers/LiveViewConference-Swift.h</key>
 		<data>
-		mGnpYgwox5+LWYQpHpme3YYzyJY=
+		YhJNESOuZq0rKXoxJI2o/6LPMVg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		6F2/uWhHM6+8hRzxMsz8jDi4rfI=
+		GrlPvFLaCJi/iaQUmwgm0UR6GF0=
 		</data>
 		<key>Local.plist</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RgRHM0+rzMh3ahjL7kZKXj9g63A=
+		phczQLR4xEC19iFec93851syAAY=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		R7ID69/lU907BOSnxJigO5eeZrM=
+		Vnw6Y8Wz1oiwWbp9qgO6qAmXAxU=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		RgRHM0+rzMh3ahjL7kZKXj9g63A=
+		phczQLR4xEC19iFec93851syAAY=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		R7ID69/lU907BOSnxJigO5eeZrM=
+		Vnw6Y8Wz1oiwWbp9qgO6qAmXAxU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -108,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vaXB7TbXbGs0sXRGLUrpXwE1TYnttsLLHqhazD0rUgc=
+			9BvwVxMzFsze/c+bnC1soxvXzhoYLYEIeAwp++DoUpQ=
 			</data>
 		</dict>
 		<key>Local.plist</key>
@@ -129,14 +129,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QWjqIZAggOIobWyP1QVpjXsz1E6ZRfbAwviX35/Mj3g=
+			ANzyPs7hPx4n8Auos86UYQI36pxDudog8dOR/dY2osk=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QWf04gPQvBjVIjfJ2F+9PQDla9g0CLJxQrh9B0teA/4=
+			H+hv2M+yFfB4d1lxBUt0CFvw4uwFKfAA4Smf13K7HYU=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftdoc</key>
@@ -150,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QWjqIZAggOIobWyP1QVpjXsz1E6ZRfbAwviX35/Mj3g=
+			ANzyPs7hPx4n8Auos86UYQI36pxDudog8dOR/dY2osk=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QWf04gPQvBjVIjfJ2F+9PQDla9g0CLJxQrh9B0teA/4=
+			H+hv2M+yFfB4d1lxBUt0CFvw4uwFKfAA4Smf13K7HYU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
