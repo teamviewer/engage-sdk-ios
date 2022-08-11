@@ -1,6 +1,6 @@
 {
   "name": "TeamViewer-Engage-Video",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "summary": "TeamViewer Engage CoBrowsing framework with conference",
   "description": "Framework for using TeamViewer Engage CoBrowsing with iOS",
   "homepage": "http://teamviewer.com",
@@ -14,12 +14,12 @@
   "public_header_files": "LiveViewConference.xcframework/*/LiveViewConference.framework/Headers/*.h",
   "source": {
     "git": "https://gitlab.com/chatvisor/ios-release.git",
-    "tag": "1.1.2"
+    "tag": "1.1.3"
   },
   "source_files": "LiveViewConference.xcframework/*/LiveViewConference.framework/Headers/*.h",
   "vendored_frameworks": "LiveViewConference.xcframework",
   "platforms": {
-    "ios": "11.0"
+    "ios": "12.0"
   },
   "swift_versions": "4.2",
   "dependencies": {
