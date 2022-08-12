@@ -1,6 +1,6 @@
 {
   "name": "Chatvisor-LiveView",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "summary": "Chatvisor CoBrowsing framework",
   "description": "Framework for using Chatvisor CoBrowsing with iOS",
   "homepage": "http://chatvisor.com",
@@ -14,20 +14,17 @@
   "public_header_files": "LiveView.xcframework/*/LiveView.framework/Headers/*.h",
   "source": {
     "git": "https://gitlab.com/chatvisor/ios-release.git",
-    "tag": "1.1.3"
+    "tag": "1.1.4"
   },
   "source_files": "LiveView.xcframework/*/LiveView.framework/Headers/*.h",
   "vendored_frameworks": "LiveView.xcframework",
   "platforms": {
-    "ios": "12.0"
+    "ios": "11.0"
   },
   "swift_versions": "4.2",
   "dependencies": {
     "Dip": [
       "~> 7.0"
-    ],
-    "Starscream": [
-      "~> 3.1"
     ],
     "SwiftProtobuf": [
       "~> 1.6"
