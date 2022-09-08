@@ -26,41 +26,59 @@ public struct BidirectionalMessage {
 public struct Click {
 }
 @objc extension LiveViewConference.Chatvisor {
-  @objc public static func conference() -> LiveViewConference.ChatvisorConference
+  @objc public static var conference: LiveViewConference.ChatvisorConference {
+    @objc get
+  }
 }
 @_inheritsConvenienceInitializers @objc public class Chatvisor : ObjectiveC.NSObject {
-  @objc public static func liveView() -> LiveViewConference.ChatvisorLiveView
-  @objc public static func coBrowsing() -> LiveViewConference.ChatvisorCoBrowsing
-  @objc public static func webChat() -> LiveViewConference.ChatvisorWebChat
-  @objc public static func configuration() -> LiveViewConference.ChatvisorConfiguration
-  @objc public static func user() -> LiveViewConference.ChatvisorUser
-  @objc public static func initConfig(tenantId: Swift.String, token: Swift.String)
-  @objc public static func initConfig(_ initConfig: LiveViewConference.CustomConfiguration)
+  @objc public static func setup(with config: LiveViewConference.SetupConfiguration)
+  @objc public static var liveView: LiveViewConference.ChatvisorLiveView {
+    @objc get
+  }
+  @objc public static var coBrowsing: LiveViewConference.ChatvisorCoBrowsing {
+    @objc get
+  }
+  @objc public static var webChat: LiveViewConference.ChatvisorWebChat {
+    @objc get
+  }
+  @objc public static var configuration: LiveViewConference.ChatvisorConfiguration {
+    @objc get
+  }
+  @objc public static var user: LiveViewConference.ChatvisorUser {
+    @objc get
+  }
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class CustomConfiguration : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class SetupConfiguration : ObjectiveC.NSObject {
   @available(*, unavailable)
   @objc override dynamic public init()
   @objc public init(tenantId: Swift.String, token: Swift.String)
-  @objc public func setServerUrl(_ url: Swift.String)
-  @objc public func setCdnUrl(_ url: Swift.String)
+  @objc public func setServerUrl(_ serverUrl: Swift.String)
+  @objc public func setCdnUrl(_ cdnUrl: Swift.String)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ChatvisorAPI {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorCoBrowsing : ObjectiveC.NSObject {
-  @objc public func start(with tenantId: Swift.String, and token: Swift.String)
   @objc public func start()
+  @objc public func start(_ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc public func stop()
+  public func connectionState() -> LiveViewConference.ChatvisorConnectionState
+  @available(*, deprecated, message: "Please use connectionState() to determine state")
+  public func connected() -> Swift.Bool
+  @objc public func onConnectionStateChange(callback: LiveViewConference.ConnectionStateResult?)
+  @objc public func shareId() -> Swift.String?
+  @objc public func setUIEnabled(_ enabled: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorConference : ObjectiveC.NSObject {
-  @objc public func start(conferenceProperties: LiveViewConference.ConferenceProperties)
-  @objc public func start(conferenceProperties: LiveViewConference.ConferenceProperties, showInviteDialog: Swift.Bool)
+  @objc public func start(conferenceProperties: LiveViewConference.ConferenceProperties, showInviteDialog: Swift.Bool = false)
+  @objc public func start(conferenceProperties: LiveViewConference.ConferenceProperties, showInviteDialog: Swift.Bool = false, _ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc public func join(conferenceProperties: LiveViewConference.ConferenceProperties)
+  @objc public func join(conferenceProperties: LiveViewConference.ConferenceProperties, _ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc public func queueStatus(completion: @escaping (Swift.Int) -> ())
   @objc override dynamic public init()
   @objc deinit
@@ -70,26 +88,54 @@ public struct Click {
   @objc public func setServer(hostname: Swift.String)
   @objc deinit
 }
+@objc public enum ChatvisorConnectionState : Swift.Int {
+  case disconnected
+  case connecting
+  case connected
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_inheritsConvenienceInitializers @objc public class ChatvisorLiveView : ObjectiveC.NSObject {
-  @objc public func start(with userId: Swift.String, and token: Swift.String)
+  public func connectionState() -> LiveViewConference.ChatvisorConnectionState
+  @available(*, deprecated, message: "Please use connectionState() to determine state")
+  public func connected() -> Swift.Bool
   @objc public func start()
+  @objc public func start(_ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc public func stop()
-  @objc public func connected() -> Swift.Bool
   @objc public func tag(_ tag: Swift.String)
-  @objc public func registerCallbacks(forStart startCallback: @escaping () -> Swift.Void, andStop stopCallback: @escaping () -> Swift.Void)
-  @objc public func shareId() -> Swift.String
+  @objc public func tag(_ tag: Swift.String, _ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
+  @objc public func setChatOverlayEnabled(isVisible: Swift.Bool)
+  @objc public func onConnectionStateChange(callback: LiveViewConference.ConnectionStateResult?)
+  @objc public func shareId() -> Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ChatvisorResult : ObjectiveC.NSObject {
+  public var success: Any? {
+    get
+  }
+  public var failure: Swift.Error? {
+    get
+  }
+  convenience public init<Success, Failure>(_ result: Swift.Result<Success, Failure>) where Failure : Swift.Error
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorUser : ObjectiveC.NSObject {
   @objc public func tag(_ user: LiveViewConference.ActiveUser)
-  @objc public func tag(_ user: LiveViewConference.ActiveUser, callback: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public func tag(_ user: LiveViewConference.ActiveUser, _ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc public func clear()
   @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorWebChat : ObjectiveC.NSObject {
+  @objc public func open()
+  @objc public func open(_ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc public func open(for tenantId: Swift.String)
+  @objc public func open(for tenantId: Swift.String, _ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -118,7 +164,11 @@ extension LiveViewConference.Injection {
   public static func getContainer() -> Dip.DependencyContainer
   @objc deinit
 }
+public typealias ConnectionStateResult = (_ state: LiveViewConference.ChatvisorConnectionState) -> Swift.Void
 @_hasMissingDesignatedInitializers public class UserUtil {
   public static func tagUserIfNeeded(callback: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
+extension LiveViewConference.ChatvisorConnectionState : Swift.Equatable {}
+extension LiveViewConference.ChatvisorConnectionState : Swift.Hashable {}
+extension LiveViewConference.ChatvisorConnectionState : Swift.RawRepresentable {}
