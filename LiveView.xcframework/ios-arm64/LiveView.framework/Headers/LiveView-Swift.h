@@ -211,28 +211,26 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC8LiveView10ActiveUser")
 @interface ActiveUser : NSObject
-@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, readonly, copy) NSString * _Nonnull id;
 @property (nonatomic, copy) NSString * _Nullable firstname;
 @property (nonatomic, copy) NSString * _Nullable lastname;
 @property (nonatomic, copy) NSString * _Nullable email;
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable tags;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull tags;
 @property (nonatomic, copy) NSString * _Nullable assignedUser;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id firstname:(NSString * _Nullable)firstname lastname:(NSString * _Nullable)lastname email:(NSString * _Nullable)email tags:(NSArray<NSString *> * _Nonnull)tags assignedUser:(NSString * _Nullable)assignedUser OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
-@class SetupConfiguration;
 @class ChatvisorLiveView;
 @class ChatvisorCoBrowsing;
 @class ChatvisorWebChat;
 @class ChatvisorConfiguration;
 @class ChatvisorUser;
+@class SetupConfiguration;
 
 SWIFT_CLASS("_TtC8LiveView9Chatvisor")
 @interface Chatvisor : NSObject
-/// Initializes the Chatvisor SDK.
-/// \param config SetupConfiguration instance 
-///
-+ (void)setupWith:(SetupConfiguration * _Nonnull)config;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChatvisorLiveView * _Nonnull liveView;)
 + (ChatvisorLiveView * _Nonnull)liveView SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChatvisorCoBrowsing * _Nonnull coBrowsing;)
@@ -243,10 +241,15 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChatvisorCon
 + (ChatvisorConfiguration * _Nonnull)configuration SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) ChatvisorUser * _Nonnull user;)
 + (ChatvisorUser * _Nonnull)user SWIFT_WARN_UNUSED_RESULT;
+/// Initializes the Chatvisor SDK.
+/// \param config SetupConfiguration instance 
+///
++ (void)setupWith:(SetupConfiguration * _Nonnull)config;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class ChatvisorResult;
+@class SharedSession;
 enum ChatvisorConnectionState : NSInteger;
 @class NSNumber;
 
@@ -258,6 +261,12 @@ SWIFT_CLASS("_TtC8LiveView19ChatvisorCoBrowsing")
 /// \param result success shareId: String or failure: Error
 ///
 - (void)start:(void (^ _Nonnull)(ChatvisorResult * _Nonnull))result;
+/// Joins existing session
+/// \param session SharedSession
+///
+/// \param result success shareId: String or failure: Error
+///
+- (void)joinWithSession:(SharedSession * _Nonnull)session :(void (^ _Nonnull)(ChatvisorResult * _Nonnull))result;
 /// Disconnects the current session
 - (void)stop;
 /// Registers callback for connection state changes
@@ -268,6 +277,8 @@ SWIFT_CLASS("_TtC8LiveView19ChatvisorCoBrowsing")
 - (NSString * _Nullable)shareId SWIFT_WARN_UNUSED_RESULT;
 /// Enables or disables the default Co-Browsing UI
 - (void)setUIEnabled:(BOOL)enabled;
+/// Returns a shared session
+- (SharedSession * _Nullable)sharedSession SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -295,6 +306,12 @@ SWIFT_CLASS("_TtC8LiveView17ChatvisorLiveView")
 /// \param result success shareId: String or failure: Error
 ///
 - (void)start:(void (^ _Nonnull)(ChatvisorResult * _Nonnull))result;
+/// Joins existing session
+/// \param session SharedSession
+///
+/// \param result success shareId: String or failure: Error
+///
+- (void)joinWithSession:(SharedSession * _Nonnull)session :(void (^ _Nonnull)(ChatvisorResult * _Nonnull))result;
 /// Disconnects the current session
 - (void)stop;
 /// Tags the current active session with a custom string value
@@ -314,6 +331,8 @@ SWIFT_CLASS("_TtC8LiveView17ChatvisorLiveView")
 - (void)onConnectionStateChangeWithCallback:(void (^ _Nullable)(enum ChatvisorConnectionState))callback;
 /// Returns the share Id to identify the session
 - (NSString * _Nullable)shareId SWIFT_WARN_UNUSED_RESULT;
+/// Returns a shared session
+- (SharedSession * _Nullable)sharedSession SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -361,13 +380,33 @@ SWIFT_CLASS("_TtC8LiveView16ChatvisorWebChat")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class SetupSharingConfiguration;
 
 SWIFT_CLASS("_TtC8LiveView18SetupConfiguration")
 @interface SetupConfiguration : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 - (nonnull instancetype)initWithTenantId:(NSString * _Nonnull)tenantId token:(NSString * _Nonnull)token OBJC_DESIGNATED_INITIALIZER;
 - (void)setServerUrl:(NSString * _Nonnull)serverUrl;
 - (void)setCdnUrl:(NSString * _Nonnull)cdnUrl;
+- (void)setSharingConfiguration:(SetupSharingConfiguration * _Nullable)sharingConfig;
+@end
+
+
+SWIFT_CLASS("_TtC8LiveView25SetupSharingConfiguration")
+@interface SetupSharingConfiguration : NSObject
+- (nonnull instancetype)initWithAppGroupId:(NSString * _Nonnull)appGroupId OBJC_DESIGNATED_INITIALIZER;
+- (void)setSessionSharingEnabled:(BOOL)sharedSessionEnabled;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC8LiveView13SharedSession")
+@interface SharedSession : NSObject
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
 
 

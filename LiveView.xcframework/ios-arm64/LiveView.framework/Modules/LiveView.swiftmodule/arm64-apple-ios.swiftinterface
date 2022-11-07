@@ -10,22 +10,29 @@ import UIKit
 import WebKit
 import _Concurrency
 import os
-@objc @_inheritsConvenienceInitializers @objcMembers public class ActiveUser : ObjectiveC.NSObject {
-  @objc public var id: Swift.String?
+@objc @objcMembers public class ActiveUser : ObjectiveC.NSObject {
+  @objc final public let id: Swift.String
   @objc public var firstname: Swift.String?
   @objc public var lastname: Swift.String?
   @objc public var email: Swift.String?
-  @objc public var tags: [Swift.String]?
+  @objc public var tags: [Swift.String]
   @objc public var assignedUser: Swift.String?
-  @objc override dynamic public init()
+  @objc public init(id: Swift.String, firstname: Swift.String? = nil, lastname: Swift.String? = nil, email: Swift.String? = nil, tags: [Swift.String] = [], assignedUser: Swift.String? = nil)
   @objc deinit
 }
-public struct BidirectionalMessage {
+@objc public class SetupSharingConfiguration : ObjectiveC.NSObject {
+  @objc public init(appGroupId: Swift.String)
+  @objc public func setSessionSharingEnabled(_ sharedSessionEnabled: Swift.Bool)
+  @objc deinit
 }
-public struct Click {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class SetupConfiguration : ObjectiveC.NSObject {
+  @objc public init(tenantId: Swift.String, token: Swift.String)
+  @objc public func setServerUrl(_ serverUrl: Swift.String)
+  @objc public func setCdnUrl(_ cdnUrl: Swift.String)
+  @objc public func setSharingConfiguration(_ sharingConfig: LiveView.SetupSharingConfiguration?)
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Chatvisor : ObjectiveC.NSObject {
-  @objc public static func setup(with config: LiveView.SetupConfiguration)
   @objc public static var liveView: LiveView.ChatvisorLiveView {
     @objc get
   }
@@ -41,23 +48,14 @@ public struct Click {
   @objc public static var user: LiveView.ChatvisorUser {
     @objc get
   }
+  @objc public static func setup(with config: LiveView.SetupConfiguration)
   @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class SetupConfiguration : ObjectiveC.NSObject {
-  @available(*, unavailable)
-  @objc override dynamic public init()
-  @objc public init(tenantId: Swift.String, token: Swift.String)
-  @objc public func setServerUrl(_ serverUrl: Swift.String)
-  @objc public func setCdnUrl(_ cdnUrl: Swift.String)
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class ChatvisorAPI {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class ChatvisorCoBrowsing : ObjectiveC.NSObject {
   @objc public func start()
   @objc public func start(_ result: @escaping (LiveView.ChatvisorResult) -> Swift.Void)
+  @objc public func join(session: LiveView.SharedSession, _ result: @escaping (LiveView.ChatvisorResult) -> Swift.Void)
   @objc public func stop()
   public func connectionState() -> LiveView.ChatvisorConnectionState
   @available(*, deprecated, message: "Please use connectionState() to determine state")
@@ -65,6 +63,7 @@ public struct Click {
   @objc public func onConnectionStateChange(callback: LiveView.ConnectionStateResult?)
   @objc public func shareId() -> Swift.String?
   @objc public func setUIEnabled(_ enabled: Swift.Bool)
+  @objc public func sharedSession() -> LiveView.SharedSession?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -74,9 +73,9 @@ public struct Click {
   @objc deinit
 }
 @objc public enum ChatvisorConnectionState : Swift.Int {
-  case disconnected
-  case connecting
-  case connected
+  case disconnected = 0
+  case connecting = 1
+  case connected = 2
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -89,12 +88,14 @@ public struct Click {
   public func connected() -> Swift.Bool
   @objc public func start()
   @objc public func start(_ result: @escaping (LiveView.ChatvisorResult) -> Swift.Void)
+  @objc public func join(session: LiveView.SharedSession, _ result: @escaping (LiveView.ChatvisorResult) -> Swift.Void)
   @objc public func stop()
   @objc public func tag(_ tag: Swift.String)
   @objc public func tag(_ tag: Swift.String, _ result: @escaping (LiveView.ChatvisorResult) -> Swift.Void)
   @objc public func setChatOverlayEnabled(isVisible: Swift.Bool)
   @objc public func onConnectionStateChange(callback: LiveView.ConnectionStateResult?)
   @objc public func shareId() -> Swift.String?
+  @objc public func sharedSession() -> LiveView.SharedSession?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -124,21 +125,15 @@ public struct Click {
   @objc override dynamic public init()
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class CommunicationBase {
-  public func registerStatus()
-  public func releaseStatus()
-  public func release(id: Swift.String)
-  public func releaseAll()
-  @objc deinit
-}
-@_hasMissingDesignatedInitializers public class Injection {
+public enum Injection {
   public static func getContainer() -> Dip.DependencyContainer
-  @objc deinit
 }
 public typealias ConnectionStateResult = (_ state: LiveView.ChatvisorConnectionState) -> Swift.Void
-@_hasMissingDesignatedInitializers public class UserUtil {
-  public static func tagUserIfNeeded(callback: @escaping (Swift.Bool) -> Swift.Void)
+@objc @_hasMissingDesignatedInitializers public class SharedSession : ObjectiveC.NSObject, Swift.Codable {
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 extension LiveView.ChatvisorConnectionState : Swift.Equatable {}
 extension LiveView.ChatvisorConnectionState : Swift.Hashable {}
