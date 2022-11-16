@@ -217,7 +217,9 @@ SWIFT_CLASS("_TtC18LiveViewConference10ActiveUser")
 @property (nonatomic, copy) NSString * _Nullable email;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull tags;
 @property (nonatomic, copy) NSString * _Nullable assignedUser;
-- (nonnull instancetype)initWithId:(NSString * _Nonnull)id firstname:(NSString * _Nullable)firstname lastname:(NSString * _Nullable)lastname email:(NSString * _Nullable)email tags:(NSArray<NSString *> * _Nonnull)tags assignedUser:(NSString * _Nullable)assignedUser OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, copy) NSString * _Nullable externalToken;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable additionalTaggingData;
+- (nonnull instancetype)initWithId:(NSString * _Nonnull)id firstname:(NSString * _Nullable)firstname lastname:(NSString * _Nullable)lastname email:(NSString * _Nullable)email tags:(NSArray<NSString *> * _Nonnull)tags assignedUser:(NSString * _Nullable)assignedUser externalToken:(NSString * _Nullable)externalToken additionalTaggingData:(NSDictionary<NSString *, NSString *> * _Nullable)additionalTaggingData OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end
@@ -284,7 +286,9 @@ SWIFT_CLASS("_TtC18LiveViewConference19ChatvisorCoBrowsing")
 - (NSString * _Nullable)shareId SWIFT_WARN_UNUSED_RESULT;
 /// Enables or disables the default Co-Browsing UI
 - (void)setUIEnabled:(BOOL)enabled;
-/// Returns a shared session
+/// Returns a Co-Browsing SharedSession instance if one exists within the App group or nil. SetupConfiguration must be configured with
+/// an instance of SetupSharingConfiguration to enable this functionality. Sessions are shared with the App group when Co-Browsing
+/// session starts and deleted when session ends by the session initiator app.
 - (SharedSession * _Nullable)sharedSession SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -374,7 +378,9 @@ SWIFT_CLASS("_TtC18LiveViewConference17ChatvisorLiveView")
 - (void)onConnectionStateChangeWithCallback:(void (^ _Nullable)(enum ChatvisorConnectionState))callback;
 /// Returns the share Id to identify the session
 - (NSString * _Nullable)shareId SWIFT_WARN_UNUSED_RESULT;
-/// Returns a shared session
+/// Returns a Co-Browsing SharedSession instance if one exists within the App group or nil. SetupConfiguration must be configured with
+/// an instance of SetupSharingConfiguration to enable this functionality. Sessions are shared with the App group when Co-Browsing
+/// session starts and deleted when session ends by the session initiator app.
 - (SharedSession * _Nullable)sharedSession SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -451,8 +457,11 @@ SWIFT_CLASS("_TtC18LiveViewConference18SetupConfiguration")
 
 SWIFT_CLASS("_TtC18LiveViewConference25SetupSharingConfiguration")
 @interface SetupSharingConfiguration : NSObject
+/// Initializes the Chatvisor SDK Sharing Configuration.
+/// \param appGroupId App group ID eg. “group.[domain].[yourcompany].[yourapp]”. Visit
+/// https://developer.apple.com/documentation/xcode/configuring-app-groups for more information.
+///
 - (nonnull instancetype)initWithAppGroupId:(NSString * _Nonnull)appGroupId OBJC_DESIGNATED_INITIALIZER;
-- (void)setSessionSharingEnabled:(BOOL)sharedSessionEnabled;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 @end

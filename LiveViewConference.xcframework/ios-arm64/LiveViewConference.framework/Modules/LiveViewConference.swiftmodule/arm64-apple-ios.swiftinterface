@@ -18,7 +18,9 @@ import os
   @objc public var email: Swift.String?
   @objc public var tags: [Swift.String]
   @objc public var assignedUser: Swift.String?
-  @objc public init(id: Swift.String, firstname: Swift.String? = nil, lastname: Swift.String? = nil, email: Swift.String? = nil, tags: [Swift.String] = [], assignedUser: Swift.String? = nil)
+  @objc public var externalToken: Swift.String?
+  @objc public var additionalTaggingData: [Swift.String : Swift.String]?
+  @objc public init(id: Swift.String, firstname: Swift.String? = nil, lastname: Swift.String? = nil, email: Swift.String? = nil, tags: [Swift.String] = [], assignedUser: Swift.String? = nil, externalToken: Swift.String? = nil, additionalTaggingData: [Swift.String : Swift.String]? = [:])
   @objc deinit
 }
 @objc extension LiveViewConference.Chatvisor {
@@ -27,8 +29,9 @@ import os
   }
 }
 @objc public class SetupSharingConfiguration : ObjectiveC.NSObject {
+  final public let appGroupId: Swift.String
+  public var sessionSharingEnabled: Swift.Bool
   @objc public init(appGroupId: Swift.String)
-  @objc public func setSessionSharingEnabled(_ sharedSessionEnabled: Swift.Bool)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class SetupConfiguration : ObjectiveC.NSObject {
@@ -156,6 +159,11 @@ public enum Injection {
 }
 public typealias ConnectionStateResult = (_ state: LiveViewConference.ChatvisorConnectionState) -> Swift.Void
 @objc @_hasMissingDesignatedInitializers public class SharedSession : ObjectiveC.NSObject, Swift.Codable {
+  final public let sessionId: Swift.String
+  final public let shareId: Swift.String
+  final public let initiatorBundleId: Swift.String
+  final public let initiatorName: Swift.String
+  final public let startedAt: Foundation.Date
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
