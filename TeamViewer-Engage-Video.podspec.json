@@ -13,7 +13,7 @@
   },
   "public_header_files": "LiveViewConference.xcframework/*/LiveViewConference.framework/Headers/*.h",
   "source": {
-    "git": "https://gitlab.com/chatvisor/ios-release.git",
+    "git": "https://gitlab.com/teamviewer/engage/dev/ios-release.git",
     "tag": "1.2.7"
   },
   "source_files": "LiveViewConference.xcframework/*/LiveViewConference.framework/Headers/*.h",
