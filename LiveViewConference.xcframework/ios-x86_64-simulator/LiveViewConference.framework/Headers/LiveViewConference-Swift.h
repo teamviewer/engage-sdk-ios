@@ -218,7 +218,7 @@ SWIFT_CLASS("_TtC18LiveViewConference10ActiveUser")
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull tags;
 @property (nonatomic, copy) NSString * _Nullable assignedUser;
 @property (nonatomic, copy) NSString * _Nullable externalToken;
-@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nullable additionalTaggingData;
+@property (nonatomic, copy) NSDictionary<NSString *, NSString *> * _Nonnull additionalTaggingData;
 - (nonnull instancetype)initWithId:(NSString * _Nonnull)id firstname:(NSString * _Nullable)firstname lastname:(NSString * _Nullable)lastname email:(NSString * _Nullable)email tags:(NSArray<NSString *> * _Nonnull)tags assignedUser:(NSString * _Nullable)assignedUser externalToken:(NSString * _Nullable)externalToken additionalTaggingData:(NSDictionary<NSString *, NSString *> * _Nullable)additionalTaggingData OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
