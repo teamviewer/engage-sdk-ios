@@ -20,7 +20,7 @@ import os
   @objc public var assignedUser: Swift.String?
   @objc public var externalToken: Swift.String?
   @objc public var additionalTaggingData: [Swift.String : Swift.String]
-  @objc public init(id: Swift.String, firstname: Swift.String? = nil, lastname: Swift.String? = nil, email: Swift.String? = nil, tags: [Swift.String] = [], assignedUser: Swift.String? = nil, externalToken: Swift.String? = nil, additionalTaggingData: [Swift.String : Swift.String]? = [: ])
+  @objc public init(id: Swift.String, firstname: Swift.String? = nil, lastname: Swift.String? = nil, email: Swift.String? = nil, tags: [Swift.String] = [], assignedUser: Swift.String? = nil, externalToken: Swift.String? = nil, additionalTaggingData: [Swift.String : Swift.String] = [:])
   @objc deinit
 }
 @objc extension LiveViewConference.Chatvisor {

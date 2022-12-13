@@ -1,20 +1,20 @@
 {
   "name": "Chatvisor-LiveView",
-  "version": "1.2.8",
-  "summary": "Chatvisor CoBrowsing framework",
+  "version": "1.2.9",
+  "summary": "TeamViewer CoBrowsing framework",
   "description": "Framework for using Chatvisor CoBrowsing with iOS",
-  "homepage": "http://chatvisor.com",
+  "homepage": "http://teamviewer.com",
   "license": {
     "type": "Copyright",
-    "text": "Copyright Chatvisor"
+    "text": "Copyright TeamViewer"
   },
   "authors": {
     "Chatvisor": "office@chatvisor.com"
   },
   "public_header_files": "LiveView.xcframework/*/LiveView.framework/Headers/*.h",
   "source": {
-    "git": "https://gitlab.com/teamviewer/engage/dev/ios-release.git",
-    "tag": "1.2.8"
+    "git": "https://gitlab.com/engage-ios/engage-ios-release.git",
+    "tag": "1.2.9"
   },
   "source_files": "LiveView.xcframework/*/LiveView.framework/Headers/*.h",
   "vendored_frameworks": "LiveView.xcframework",
