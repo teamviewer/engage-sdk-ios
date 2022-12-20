@@ -140,6 +140,7 @@ import os
   @objc public func open(_ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
   @objc public func open(for tenantId: Swift.String)
   @objc public func open(for tenantId: Swift.String, _ result: @escaping (LiveViewConference.ChatvisorResult) -> Swift.Void)
+  @objc public func close()
   @objc override dynamic public init()
   @objc deinit
 }

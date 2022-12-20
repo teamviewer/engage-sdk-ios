@@ -385,6 +385,8 @@ SWIFT_CLASS("_TtC8LiveView16ChatvisorWebChat")
 /// \param result success Some or error
 ///
 - (void)openFor:(NSString * _Nonnull)tenantId :(void (^ _Nonnull)(ChatvisorResult * _Nonnull))result;
+/// Closes  the web chat
+- (void)close;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -815,6 +817,8 @@ SWIFT_CLASS("_TtC8LiveView16ChatvisorWebChat")
 /// \param result success Some or error
 ///
 - (void)openFor:(NSString * _Nonnull)tenantId :(void (^ _Nonnull)(ChatvisorResult * _Nonnull))result;
+/// Closes  the web chat
+- (void)close;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
