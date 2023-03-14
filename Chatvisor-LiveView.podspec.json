@@ -1,6 +1,6 @@
 {
   "name": "Chatvisor-LiveView",
-  "version": "1.2.12",
+  "version": "1.2.13",
   "summary": "TeamViewer CoBrowsing framework",
   "description": "Framework for using Chatvisor CoBrowsing with iOS",
   "homepage": "http://teamviewer.com",
@@ -14,7 +14,7 @@
   "public_header_files": "LiveView.xcframework/*/LiveView.framework/Headers/*.h",
   "source": {
     "git": "https://gitlab.com/engage-ios/engage-ios-release.git",
-    "tag": "1.2.12"
+    "tag": "1.2.13"
   },
   "source_files": "LiveView.xcframework/*/LiveView.framework/Headers/*.h",
   "vendored_frameworks": "LiveView.xcframework",
@@ -23,8 +23,8 @@
   },
   "swift_versions": "4.2",
   "dependencies": {
-    "Dip": [
-      "~> 7.0"
+    "Swinject": [
+      "~> 2.8.2"
     ],
     "SwiftProtobuf": [
       "~> 1.6"
