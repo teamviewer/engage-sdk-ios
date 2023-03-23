@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		qTo+PFaQ68oLX4FBHnOyqCiUoPM=
+		vYjJMF9bscXHbHVMtc6o68tX8Nw=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		qjfywZwvcbkGbdT97rnApj3LHxI=
+		Fd+JCiXBVaX3sTMTPNU8nTx+kgk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -129,7 +129,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8efi59pAOjf+EZih/lpqToRr8Ud0swAJiRt12yajZ1I=
+			zvIP1Uvxp0lbKR6Ba1Br2QyerF2oh70oHKh1tl4tAF8=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -157,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h2ozzHxvaC04DFUWOx95ikG4KFShRYXtYKXnI76wQjs=
+			kKpZI5Up8lIAVqfDZtfR+n0wUL5dFo2iBHq2/dy188c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
