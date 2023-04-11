@@ -489,6 +489,7 @@ SWIFT_CLASS("_TtC18LiveViewConference20ConferenceProperties")
 @end
 
 @class SetupSharingConfiguration;
+@class UIColor;
 
 SWIFT_CLASS("_TtC18LiveViewConference18SetupConfiguration")
 @interface SetupConfiguration : NSObject
@@ -498,6 +499,8 @@ SWIFT_CLASS("_TtC18LiveViewConference18SetupConfiguration")
 - (void)setServerUrl:(NSString * _Nonnull)serverUrl;
 - (void)setCdnUrl:(NSString * _Nonnull)cdnUrl;
 - (void)setSharingConfiguration:(SetupSharingConfiguration * _Nullable)sharingConfig;
+- (void)setControlsColor:(UIColor * _Nonnull)controlsColor;
+- (void)setOverlayBackgroundColor:(UIColor * _Nonnull)overlayBackgroundColor;
 @end
 
 

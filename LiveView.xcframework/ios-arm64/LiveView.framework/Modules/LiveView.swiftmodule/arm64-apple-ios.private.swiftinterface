@@ -35,6 +35,8 @@ import os
   @objc public func setServerUrl(_ serverUrl: Swift.String)
   @objc public func setCdnUrl(_ cdnUrl: Swift.String)
   @objc public func setSharingConfiguration(_ sharingConfig: LiveView.SetupSharingConfiguration?)
+  @objc public func setControlsColor(_ controlsColor: UIKit.UIColor)
+  @objc public func setOverlayBackgroundColor(_ overlayBackgroundColor: UIKit.UIColor)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Chatvisor : ObjectiveC.NSObject {
