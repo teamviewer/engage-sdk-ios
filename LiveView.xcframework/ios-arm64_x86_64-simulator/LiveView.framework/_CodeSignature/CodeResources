@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/LiveView.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		bvolC2VMW7kO77Rj9TMfXPtPB/E=
+		mNhQjF1mQTnEU964i5KKgN+Ko0U=
 		</data>
 		<key>Modules/LiveView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/LiveView.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TFhs3nGoRajAc3FOxkps4Pkfoz0=
+		xa2ne7MTMMk2ckkJFyP3NWwFMLg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -172,7 +172,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5dqddDvOcvzl7S0MO/gYqg8P6dHp8XmsesJit/1dz50=
+			RkGbJRImbV3N6sDA5ljG8l/eKsuYkSqC8cL/Ug2e2cY=
 			</data>
 		</dict>
 		<key>Modules/LiveView.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -207,7 +207,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ibxdCq+/1wfSTnQTlZiIE1LheamXYPlzlNpHTOklT90=
+			5FjwEasSbN1Qy15G4yWoT7oCPGWtQPPRZH5J18QV8o4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
