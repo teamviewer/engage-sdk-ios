@@ -34,11 +34,11 @@
 		</data>
 		<key>Local.plist</key>
 		<data>
-		9LPVXEclIbqwyNqPzMPnqpgPmko=
+		QX2GZIESpfmnwQj0zUG9viKNuYE=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		vtvQ2NhVHCMkJb895ClEh2uMGz8=
+		Yyu/CBaMxLBlRj+Z0f5aLLLd/7M=
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		anJkwGZBzshMgB3wtW2mLywStJ4=
+		iHgQcai2VwKDpm1FJs14WQxG75g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -68,6 +68,24 @@
 		<data>
 		IGeTG+fSy8eArpM+bLAd3DSHwDw=
 		</data>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TQh0Qu23nc/ff+jMDISrqM9kT9Y=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MGwsOMaKkC4MHZ0jfNkOYQNmPsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -117,14 +135,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SSNNL8PLe8SVeMiDkaM6S/AmrM0vO4TIjZ970XuG1aA=
+			lueM6oRmNZ35u3StNyk8zlpXgD8t1kX80wy36Lqns50=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sQ64MaV8IcDnsIEG/fGfqLL73q3u923GUQ4qNA9/2N0=
+			Vl0yMjP/sXUBBnIe1X+dz0adXM5RAEhq9zjNMndhWR8=
 			</data>
 		</dict>
 		<key>Modules/LiveViewConference.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -152,7 +170,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cp7cegqeC8iIFXpRqwXJCVnOSri1bNXalFamc4O9TkU=
+			o9xqiJh7KCCvXq3YIK6xDeWIhOIloPavtkgWgjaT2gY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -175,6 +193,24 @@
 			<data>
 			gLEmHDIqc4B2H6aTYufLDNtXv1xoSc5dmlQDRZZ6PRw=
 			</data>
+		</dict>
+		<key>de.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Gg2EyICiUfhT4P+j59j186bLeRj9P9RPG4cROqtG5cM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>en.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			q88z3Za0MvlIyvdbI7obSeB9uO+RacPjGxFHwCBdROI=
+			</data>
+			<key>optional</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
