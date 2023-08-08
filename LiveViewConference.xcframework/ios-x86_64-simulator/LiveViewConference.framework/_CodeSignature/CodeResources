@@ -68,6 +68,15 @@
 		<data>
 		IGeTG+fSy8eArpM+bLAd3DSHwDw=
 		</data>
+		<key>cs.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			/7Rn/lG8KgjW+DQ+Atmta9j08uA=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash</key>
@@ -82,6 +91,24 @@
 			<key>hash</key>
 			<data>
 			MGwsOMaKkC4MHZ0jfNkOYQNmPsE=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UdO2KsTb6U/XWUP3ZZd31/qsEZo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Dg0/Z687n+CevRFNfGJoSB6pNlw=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -194,6 +221,15 @@
 			gLEmHDIqc4B2H6aTYufLDNtXv1xoSc5dmlQDRZZ6PRw=
 			</data>
 		</dict>
+		<key>cs.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QfvANef/o+9J/7wDGGz8jm4ct2LPXFesvhHueB2JMdg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>de.lproj/Localizable.strings</key>
 		<dict>
 			<key>hash2</key>
@@ -208,6 +244,24 @@
 			<key>hash2</key>
 			<data>
 			q88z3Za0MvlIyvdbI7obSeB9uO+RacPjGxFHwCBdROI=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>hu.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oA7/ccK6TMe4EA+x7fltRYTEuZ10cJPdYN6t8rHwU+c=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>sk.lproj/Localizable.strings</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NdOM5c0msYZ2uAAyxv6zfPdrXTMYzquYXp6/YuLqz7I=
 			</data>
 			<key>optional</key>
 			<true/>
