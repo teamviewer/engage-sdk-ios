@@ -79,10 +79,13 @@ import os
   @objc public func setServer(hostname: Swift.String)
   @objc deinit
 }
-@objc public enum ChatvisorConnectionState : Swift.Int {
+@objc public enum ChatvisorConnectionState : Swift.Int, Swift.CustomStringConvertible {
   case disconnected = 0
   case connecting = 1
   case connected = 2
+  public var description: Swift.String {
+    get
+  }
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
