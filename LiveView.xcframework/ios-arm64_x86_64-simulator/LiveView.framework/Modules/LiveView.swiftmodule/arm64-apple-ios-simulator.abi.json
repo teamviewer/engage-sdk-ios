@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "LiveView",
+    "printedName": "LiveView",
     "children": [
       {
         "kind": "Import",
@@ -1083,6 +1083,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1489,6 +1503,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1737,6 +1765,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2105,6 +2147,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2541,6 +2597,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2674,6 +2744,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2986,6 +3070,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3483,6 +3581,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3614,12 +3726,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -3646,12 +3758,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.Error?",
+                    "printedName": "(any Swift.Error)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ],
@@ -3750,6 +3862,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3950,6 +4076,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4223,6 +4363,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4490,6 +4644,22 @@
         "moduleName": "LiveView",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4986,7 +5156,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Decoder",
-                "printedName": "Swift.Decoder",
+                "printedName": "any Swift.Decoder",
                 "usr": "s:s7DecoderP"
               }
             ],
@@ -5014,7 +5184,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Encoder",
-                "printedName": "Swift.Encoder",
+                "printedName": "any Swift.Encoder",
                 "usr": "s:s7EncoderP"
               }
             ],
@@ -5054,6 +5224,20 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -5312,6 +5496,34 @@
         "printedName": "SwiftProtobuf",
         "declKind": "Import",
         "moduleName": "LiveView"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LiveView"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "LiveView"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "LiveView"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "LiveView"
       }
     ],
     "json_format_version": 8
@@ -5330,13 +5542,6 @@
       "offset": 640,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/User\/ActiveUser.swift",
-      "kind": "StringLiteral",
-      "offset": 45,
-      "length": 10,
-      "value": "\"LiveView.ActiveUser\""
     },
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/ApplicationConfig.swift",
@@ -5407,13 +5612,6 @@
       "offset": 3636,
       "length": 3,
       "value": "5.0"
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/ApplicationConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 3129,
-      "length": 17,
-      "value": "\"LiveView.ApplicationConfig\""
     },
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Message\/Bidirectional\/BidirectionalMessage.swift",
@@ -5570,13 +5768,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/Chatvisor.swift",
-      "kind": "StringLiteral",
-      "offset": 51,
-      "length": 25,
-      "value": "\"LiveView.SetupSharingConfiguration\""
-    },
-    {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/Common\/ChatvisorConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 93,
@@ -5589,27 +5780,6 @@
       "offset": 139,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/ConnectionState\/ChatvisorConnectionState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 215,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/ConnectionState\/ChatvisorConnectionState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 236,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/ConnectionState\/ChatvisorConnectionState.swift",
-      "kind": "IntegerLiteral",
-      "offset": 256,
-      "length": 1,
-      "value": "2"
     },
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/ConnectionState\/ChatvisorConnectionState.swift",
@@ -5673,41 +5843,6 @@
       "offset": 151,
       "length": 3,
       "value": "\"p\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CommunicationMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 130,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CommunicationMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 151,
-      "length": 3,
-      "value": "\"p\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CommunicationMessageWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 140,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CommunicationMessageWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 162,
-      "length": 3,
-      "value": "\"m\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CommunicationMessageWrapper.swift",
-      "kind": "StringLiteral",
-      "offset": 196,
-      "length": 4,
-      "value": "\"ad\""
     },
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CommunicationMessageWrapper.swift",
@@ -5827,41 +5962,6 @@
       "offset": 946,
       "length": 63,
       "value": "\"You were requested to join a conference. Do you want join it?\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CustomerActiveStatusDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 459,
-      "length": 3,
-      "value": "\"u\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CustomerActiveStatusDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 477,
-      "length": 3,
-      "value": "\"t\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CustomerActiveStatusDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 501,
-      "length": 4,
-      "value": "\"dT\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CustomerActiveStatusDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 522,
-      "length": 5,
-      "value": "\"cId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CustomerActiveStatusDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 547,
-      "length": 5,
-      "value": "\"sId\""
     },
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/Model\/CustomerActiveStatusDTO.swift",
@@ -6060,146 +6160,6 @@
       "value": "\"optin\""
     },
     {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 6,
-      "value": "\"shId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 305,
-      "length": 5,
-      "value": "\"cvu\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 324,
-      "length": 5,
-      "value": "\"url\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 345,
-      "length": 7,
-      "value": "\"start\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 373,
-      "length": 6,
-      "value": "\"init\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 394,
-      "length": 6,
-      "value": "\"page\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 420,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 445,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 468,
-      "length": 6,
-      "value": "\"viId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 493,
-      "length": 5,
-      "value": "\"tId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MobileInitDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 514,
-      "length": 7,
-      "value": "\"optin\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 339,
-      "length": 3,
-      "value": "\"s\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 372,
-      "length": 4,
-      "value": "\"st\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 397,
-      "length": 3,
-      "value": "\"h\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 413,
-      "length": 4,
-      "value": "\"ip\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 431,
-      "length": 5,
-      "value": "\"ios\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 458,
-      "length": 6,
-      "value": "\"fsTy\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 483,
-      "length": 3,
-      "value": "\"x\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 513,
-      "length": 18,
-      "value": "\"disableWebsocket\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 555,
-      "length": 4,
-      "value": "\"cA\""
-    },
-    {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Init\/Model\/MonitoringConfigDTO.swift",
       "kind": "StringLiteral",
       "offset": 339,
@@ -6279,20 +6239,6 @@
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
       "kind": "StringLiteral",
-      "offset": 189,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 8,
-      "value": "\"custom\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
       "offset": 294,
       "length": 4,
       "value": "\"cs\""
@@ -6324,76 +6270,6 @@
       "offset": 400,
       "length": 8,
       "value": "\"custom\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 294,
-      "length": 4,
-      "value": "\"cs\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 321,
-      "length": 4,
-      "value": "\"ce\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 350,
-      "length": 4,
-      "value": "\"ca\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 380,
-      "length": 4,
-      "value": "\"cd\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 400,
-      "length": 8,
-      "value": "\"custom\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 520,
-      "length": 3,
-      "value": "\"c\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 538,
-      "length": 3,
-      "value": "\"t\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 557,
-      "length": 3,
-      "value": "\"v\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 585,
-      "length": 4,
-      "value": "\"cc\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 604,
-      "length": 3,
-      "value": "\"m\""
     },
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/MonitoringLogDTO.swift",
@@ -6438,27 +6314,6 @@
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/CoBrowsing\/RoundedButton.swift",
-      "kind": "StringLiteral",
-      "offset": 61,
-      "length": 13,
-      "value": "\"LiveView.RoundedButton\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/SessionSharing\/SharedSession.swift",
-      "kind": "StringLiteral",
-      "offset": 121,
-      "length": 13,
-      "value": "\"LiveView.SharedSession\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Util\/SharedUserDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 219,
-      "length": 23,
-      "value": "\"engageSharedSessionId\""
-    },
-    {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Util\/SharedUserDefaults.swift",
       "kind": "StringLiteral",
       "offset": 219,
@@ -6501,13 +6356,6 @@
       "value": "0.6"
     },
     {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Monitoring\/ViewMonitor.swift",
-      "kind": "StringLiteral",
-      "offset": 47,
-      "length": 11,
-      "value": "\"LiveView.ViewMonitor\""
-    },
-    {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Util\/ViewUtils.swift",
       "kind": "FloatLiteral",
       "offset": 108,
@@ -6536,34 +6384,6 @@
       "value": "\"sId\""
     },
     {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/VisitorMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 218,
-      "length": 5,
-      "value": "\"tId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/VisitorMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 243,
-      "length": 5,
-      "value": "\"vId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Monitoring\/VisitorMetadata.swift",
-      "kind": "StringLiteral",
-      "offset": 268,
-      "length": 5,
-      "value": "\"sId\""
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/WebChat\/WebChat.swift",
-      "kind": "StringLiteral",
-      "offset": 148,
-      "length": 7,
-      "value": "\"LiveView.WebChat\""
-    },
-    {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Message\/Xhr\/XhrMessageSender.swift",
       "kind": "FloatLiteral",
       "offset": 107,
@@ -6590,13 +6410,6 @@
       "offset": 476,
       "length": 4,
       "value": "true"
-    },
-    {
-      "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Network\/Message\/Xhr\/XhrMessageSender.swift",
-      "kind": "StringLiteral",
-      "offset": 34,
-      "length": 16,
-      "value": "\"LiveView.XhrMessageSender\""
     },
     {
       "filePath": "\/Users\/hetzner\/builds\/TBRrYxnB\/0\/teamviewer\/engage\/dev\/mobile\/mobile-sdk\/iOS\/Sources\/LiveView\/General\/LiveView\/Communication\/XhrRunner.swift",
@@ -6947,6 +6760,34 @@
       "offset": 17746,
       "length": 19,
       "value": "\"mobileDeviceToken\""
+    },
+    {
+      "filePath": "\/Users\/hetzner\/Library\/Developer\/Xcode\/DerivedData\/LiveView-akdeolziwkmwivdzlakjrunbgtzr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LiveView\/IntermediateBuildFilesPath\/LiveView.build\/AAProd-iphonesimulator\/LiveView.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 730,
+      "length": 11,
+      "value": "\"chat_icon\""
+    },
+    {
+      "filePath": "\/Users\/hetzner\/Library\/Developer\/Xcode\/DerivedData\/LiveView-akdeolziwkmwivdzlakjrunbgtzr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LiveView\/IntermediateBuildFilesPath\/LiveView.build\/AAProd-iphonesimulator\/LiveView.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 870,
+      "length": 12,
+      "value": "\"close_icon\""
+    },
+    {
+      "filePath": "\/Users\/hetzner\/Library\/Developer\/Xcode\/DerivedData\/LiveView-akdeolziwkmwivdzlakjrunbgtzr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LiveView\/IntermediateBuildFilesPath\/LiveView.build\/AAProd-iphonesimulator\/LiveView.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1020,
+      "length": 17,
+      "value": "\"left_arrow_icon\""
+    },
+    {
+      "filePath": "\/Users\/hetzner\/Library\/Developer\/Xcode\/DerivedData\/LiveView-akdeolziwkmwivdzlakjrunbgtzr\/Build\/Intermediates.noindex\/ArchiveIntermediates\/LiveView\/IntermediateBuildFilesPath\/LiveView.build\/AAProd-iphonesimulator\/LiveView.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1177,
+      "length": 18,
+      "value": "\"right_arrow_icon\""
     }
   ]
 }

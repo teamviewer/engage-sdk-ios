@@ -1,16 +1,19 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 effective-4.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -module-name LiveView
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0 effective-4.2 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios13-simulator -enable-objc-interop -enable-library-evolution -swift-version 4.2 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name LiveView
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import DeveloperToolsSupport
 import Foundation
 import QuickLook
 import Swift
 import SwiftProtobuf
+import SwiftUI
 import Swinject
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 import os
 @objc @objcMembers public class ActiveUser : ObjectiveC.NSObject {
   @objc final public let id: Swift.String
@@ -113,7 +116,7 @@ import os
   public var success: Any? {
     get
   }
-  public var failure: Swift.Error? {
+  public var failure: (any Swift.Error)? {
     get
   }
   convenience public init<Success, Failure>(_ result: Swift.Result<Success, Failure>) where Failure : Swift.Error
@@ -148,8 +151,8 @@ public typealias ConnectionStateResult = (_ state: LiveView.ChatvisorConnectionS
   final public let startedAt: Foundation.Date
   @objc override dynamic public func isEqual(_ object: Any?) -> Swift.Bool
   @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
 }
 extension LiveView.ChatvisorConnectionState : Swift.Equatable {}
 extension LiveView.ChatvisorConnectionState : Swift.Hashable {}
